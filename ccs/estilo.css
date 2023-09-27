@@ -138,7 +138,7 @@
 /*? Media Query para tablet */
 @media  (max-width: 768px) {
     .contenedor{
-        background-color: rgb(108, 156, 108);
+        /* background-color: rgb(108, 156, 108); */
         grid-template:  "header header header" 
                          "carrusel carrusel carrusel"
                          "pelis pelis pelis"
@@ -156,12 +156,12 @@
 .peli1{
     display: flex;
     justify-content: space-evenly;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 .peli2{
     display: flex;
     justify-content: space-evenly;
-    background-color: rgb(187, 221, 143);
+    /* background-color: rgb(187, 221, 143); */
 }
 .slider{
     width: 100vw;
@@ -173,13 +173,23 @@
 /** Media Query para cel */
 @media  (max-width: 425px) {
     .contenedor{
-        background-color: rgb(181, 114, 212);
+        /* background-color: rgb(181, 114, 212); */
         grid-template:  "header" 
                          "carrusel"
                          "pelis"
                          "marquesina"
                          "footer footer footer";
     }
+
+     .foto .alicia{
+        display: none;
+     }
+     .foto img{
+        object-fit: cover;
+         height: 100vh;
+         width: 95vw;
+     }
+    
     .pelis{
         flex-direction: row;
         justify-content: center;
