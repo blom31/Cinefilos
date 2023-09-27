@@ -13,41 +13,41 @@
 <body>
     <div class="contenedor">
 <!--* ======================================================================= -->
-<!--* =====================M E N U  -  R E S P O S I V E===================== -->
+<!--* =====================M E N U  -  R E S P O S I V E========================= -->
 <!--* ======================================================================= -->
 
-        <header class="header container-fluid ">
-            <nav class="navbar container navbar-expand-md navbar-light bg-transparent">
-                <div class="container-fluid">
-                  <a class="navbar-brand fs-4" href="#">Bibliocinéfilo</a>
+        <header class="header container-fluid">
+            <nav class="navbar container navbar-expand-md navbar-light">
+                <div class="container-fluid ">
+                  <a class="navbar-brand fs-4 text-white" href="#">Bibliocinéfilo</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link active text-white" aria-current="page" href="#">Inicio</a>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Películas</a>
+                      <li class="nav-item ">
+                        <a class="nav-link text-white" href="#">Películas</a>
                       </li>
                       <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                            Géneros
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="#">Acción</a></li>
-                          <li><a class="dropdown-item" href="#">Fantasía</a></li>
-                          <li><a class="dropdown-item" href="#">Terror</a></li>
+                        <ul class="dropdown-menu bg-dark " aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item text-white" href="#">Acción</a></li>
+                          <li><a class="dropdown-item text-white" href="#">Fantasía</a></li>
+                          <li><a class="dropdown-item text-white" href="#">Terror</a></li>
                         </ul>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Libros</a>
+                        <a class="nav-link text-white" href="#" tabindex="-1" aria-disabled="true">Libros</a>
                       </li>
                     </ul>
                     <form class="d-flex">
                       <input class="form-control me-3" type="search" placeholder="Buscar" aria-label="Search">
-                      <button class="btn btn-outline-dark" type="submit">Buscar</button>
+                      <button class="btn btn-outline-light" type="submit">Buscar</button>
                     </form>
                   </div>
                 </div>
@@ -56,49 +56,46 @@
 
 <!--? ======================================================================= -->
 <!--? ======================= C  A  R  R  U  S  E  L  ======================= -->
-<!--? ======================================================================= -
+<!--? ======================================================================= -->
         <div class="carrusel container-fluid">
-            <div id="carouselExampleIndicators" class=" carousel slide " data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-                    
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active prueba">
-                    <img src="./img/it/it.jpg" class="img-fluid w-100 imgcarru" alt="">
-                  </div>
-                  <div class="carousel-item prueba">
-                    <img src="./img/harry/harry.jpg" class="img-fluid  imgcarru" alt="">
-                  </div>
-                  <div class="carousel-item prueba">
-                    <img src="./img/alicia/1.jpeg" class="img-fluid  imgcarru" alt="">
-                  </div>
-                  
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active foto">
+                <img src="img/alicia/1.jpeg" class="d-block " alt="...">
               </div>
+              <div class="carousel-item foto">
+                <img src="img/harry/harry.jpg" class="d-block " alt="...">
+              </div>
+              <div class="carousel-item foto">
+                <img src="img/it/it.jpg" class="d-block " alt="...">
+              </div>
+              <div class="carousel-item foto">
+                <img src="img/juegos/juegosdelhambre.webp" class="d-block " alt="...">
+              </div>
+              <div class="carousel-item foto">
+                <img src="img/leyenda/legend.jpg" class="d-block " alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
+
+
+
 
 <!--! ======================================================================= -->
 <!--! ====================== P  E  L  Í  C  U  L  A  S ====================== -->
 <!--! ======================================================================= -->
         <div class="pelis container-fluid">
             <div class="row peli1">
-                <div class="card bg-transparent" style="width: 17rem;">
+                <div class="card  bg-transparent" style="width: 17rem;">
                     <img src="img/alicia/poster-alicia.jpg" class="card-img-top" alt="...">
                     <span>Alicia en el País de las Maravillas</span>
                   </div>
@@ -133,13 +130,13 @@
                         <div class="slide"><img src="img/harry/harry.jpg"  alt=""></img></div>
                         <div class="slide"><img src="img/juegos/juegosdelhambre.webp" alt=""></img></div>
                         <div class="slide"><img src="img/leyenda/legend.jpg" alt=""></img></div>
-                        <div class="slide"><img src="img/it/it-2.jpg" alt=""></img></div>
+                        <div class="slide"><img src="img/it/it.jpg" alt=""></img></div>
                         <div class="slide"><img src="img/lord/losanillos.jpeg" alt=""></img></div>
                         <div class="slide"><img src="img/alicia/1.jpeg" alt=""></img></div>
                         <div class="slide"><img src="img/harry/harry.jpg"  alt=""></img></div>
                         <div class="slide"><img src="img/juegos/juegosdelhambre.webp" alt=""></img></div>
                         <div class="slide"><img src="img/leyenda/legend.jpg" alt=""></img></div>
-                        <div class="slide"><img src="img/it/it-2.jpg" alt=""></img></div>
+                        <div class="slide"><img src="img/it/it.jpg" alt=""></img></div>
                         <div class="slide"><img src="img/arraival/La-llegada-1.jpg" alt=""></img></div>
                     </div>
                 </div>
@@ -173,15 +170,15 @@
         </div>
 
         <div class="footer container-fluid">
-            <div class="redes">
-                <h5 class="text-dark">Contáctanos</h5>
+            <div class="redes ">
+                <h5 class="text-white">Contáctanos</h5>
                 <a href="#"><i class="fa-brands fa-twitter"></i></a>
                 <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="#"> <i class="fa-brands fa-instagram"></i> </a>
             </div>
         
             <div class="tecno">
-                <h5 class="text-dark ">Tecnologías</h5>
+                <h5 class="text-white ">Tecnologías</h5>
                 <a href="#"> <i class="fa-brands fa-bootstrap"></i></a>
                 <a href="#"><i class="fa-brands fa-css3"></i></a>
                 <a href="#"><i class="fa-brands fa-font-awesome"></i></a>

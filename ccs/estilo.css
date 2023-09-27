@@ -1,7 +1,8 @@
 /** MAQUETADO DE LA PÁGINA PARA PANTALLA DE COMPU*/
 .contenedor{
-    gap: .5em;
-    background-color: #d8cf81;
+        background-color: rgb(20, 20, 20);
+
+    color: white;
     display: grid;
     grid-template: auto auto auto auto auto auto / 27% 27% 27% 1fr;
     grid-template-areas: "header header header header"
@@ -16,12 +17,10 @@
 
 .header{
     grid-area: header;
-    background-color: rgb(152, 240, 240);
+    /* background-color: rgb(152, 240, 240); */
     display: flex;
     justify-content:space-around;
 }
-
-
 
 .navega{
     width: 30%;
@@ -33,28 +32,30 @@
 
 .carrusel{
     grid-area: carrusel;
-    background-color: rgb(114, 219, 219);
+    /* background-color: rgb(114, 219, 219); */
 }
 
 
-.prueba {
-    max-height: 25.2rem;
-    
+.foto {
+    max-height: 28rem;
  }
-.prueba .imgcarru{
-     object-fit: cover;
-     width: 100%;
+.foto img{
+   object-fit: cover;
     height: 100%;
+    width: 100%;
 }
 
 /*! ESTILOS DE LAS PELÍCULAS */
 
 .pelis{
     grid-area: pelis;
-    background-color: rgba(13, 53, 116, 0.5);
+    margin-top: 1em;
+    margin-left: 0px;
+    /* background-color: rgba(13, 53, 116, 0.5); */
     display: flex;
     justify-content: space-between;
 }
+
 .peli1{
     text-align: center;
 }
@@ -65,14 +66,15 @@
 /** ESTILOS DE MARQUESINA */
 .marquesina{
     grid-area: marquesina;
-    background-color: lightskyblue;
+    margin-top: 1em;
+    /* background-color: lightskyblue; */
 }
 .slider{
     height: 15vh;
     overflow: hidden;   
 }
 .slider{
-    width: 81.2vw;
+    width: 80vw;
     height: 20vh;
     overflow: hidden;   
 }
@@ -107,17 +109,18 @@
 /*! ESTILOS DE LAS PELÍCULAS SEGUNDA SECCIÓN */
 .pelis2{
     grid-area: pelis2;
-    background-color: rgb(209, 112, 132);
+    /* background-color: rgb(209, 112, 132); */
     display: flex;
     justify-content: space-between;
 }
 .aside{
     grid-area: aside;
-    background-color: rgb(187, 231, 105);
+    margin-top: 1em;
 }
 .footer{
     grid-area: footer;
-    background-color: rgb(132, 231, 185);
+    margin-top: 2em;
+    /* background-color: rgb(132, 231, 185); */
     display: flex;
     justify-content: space-around;
 }
@@ -177,9 +180,6 @@
                          "marquesina"
                          "footer footer footer";
     }
-    .conte{
-        width: initial;
-    }
     .pelis{
         flex-direction: row;
         justify-content: center;
@@ -198,7 +198,9 @@
         display: none  ;
     }
     .marquesina{
-        display: none;
+        /*display: none;*/
+        padding: .5em;
+        width: 90vw;
     }
     .aside{
         display:none   ;
