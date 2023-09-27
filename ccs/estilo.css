@@ -181,15 +181,7 @@
                          "footer footer footer";
     }
 
-     .foto .alicia{
-        display: none;
-     }
-     .foto img{
-        object-fit: cover;
-         height: 100vh;
-         width: 95vw;
-     }
-    
+         
     .pelis{
         flex-direction: row;
         justify-content: center;
