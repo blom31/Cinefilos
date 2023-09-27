@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ccs/estilo.css">
+    <link rel="stylesheet" href="./ccs/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/7f7fe5557e.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="libro.ico">
+    <title>Bibliocinéfilos</title>
+<!-- </head> a este archivo debo pegar -->
+<body>
+    <div class="contenedor">
+<!--* ======================================================================= -->
+<!--* =====================M E N U  -  R E S P O S I V E===================== -->
+<!--* ======================================================================= -->
+
+        <header class="header container-fluid ">
+            <nav class="navbar container navbar-expand-md navbar-light bg-transparent">
+                <div class="container-fluid">
+                  <a class="navbar-brand fs-4" href="#">Bibliocinéfilo</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Películas</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                           Géneros
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Acción</a></li>
+                          <li><a class="dropdown-item" href="#">Fantasía</a></li>
+                          <li><a class="dropdown-item" href="#">Terror</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Libros</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                      <input class="form-control me-3" type="search" placeholder="Buscar" aria-label="Search">
+                      <button class="btn btn-outline-dark" type="submit">Buscar</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        </header>
+
+<!--? ======================================================================= -->
+<!--? ======================= C  A  R  R  U  S  E  L  ======================= -->
+<!--? ======================================================================= -
+        <div class="carrusel container-fluid">
+            <div id="carouselExampleIndicators" class=" carousel slide " data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                    
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active prueba">
+                    <img src="./img/it/it.jpg" class="img-fluid w-100 imgcarru" alt="">
+                  </div>
+                  <div class="carousel-item prueba">
+                    <img src="./img/harry/harry.jpg" class="img-fluid  imgcarru" alt="">
+                  </div>
+                  <div class="carousel-item prueba">
+                    <img src="./img/alicia/1.jpeg" class="img-fluid  imgcarru" alt="">
+                  </div>
+                  
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+
+<!--! ======================================================================= -->
+<!--! ====================== P  E  L  Í  C  U  L  A  S ====================== -->
+<!--! ======================================================================= -->
+        <div class="pelis container-fluid">
+            <div class="row peli1">
+                <div class="card bg-transparent" style="width: 17rem;">
+                    <img src="img/alicia/poster-alicia.jpg" class="card-img-top" alt="...">
+                    <span>Alicia en el País de las Maravillas</span>
+                  </div>
+                  <div class="card bg-transparent" style="width: 17rem;">
+                    <img src="img/harry/camara.jpg" class="card-img-top" alt="...">
+                    <span>Harry Potter La Cámara Secreta</span>
+                  </div>
+            </div>
+            <div class="row peli2">
+                <div class="card bg-transparent" style="width: 17rem;">
+                    <img src="img/it/it-eso.png" class="card-img-top" alt="...">
+                    <span>IT (ESO)</span>
+                  </div>
+                  <div class="card bg-transparent" style="width: 17rem;">
+                    <img src="img/leyenda/soy-leyenda.png" class="card-img-top" alt="...">
+                    <span>Soy Leyenda</span>
+                  </div>
+            </div>
+            
+        </div>
+        <div class="aside container-fluid">
+            <div>aside</div>
+        </div>
+
+<!--* ======================================================================= -->
+<!--* =====================M  A  R  Q  U  E  S  I  N  A ===================== -->
+<!--* ======================================================================= -->
+        <div class="marquesina">
+                <div class="slider">
+                    <div class="slide-track">
+                        <div class="slide"><img src="img/alicia/1.jpeg" alt=""></img></div>
+                        <div class="slide"><img src="img/harry/harry.jpg"  alt=""></img></div>
+                        <div class="slide"><img src="img/juegos/juegosdelhambre.webp" alt=""></img></div>
+                        <div class="slide"><img src="img/leyenda/legend.jpg" alt=""></img></div>
+                        <div class="slide"><img src="img/it/it-2.jpg" alt=""></img></div>
+                        <div class="slide"><img src="img/lord/losanillos.jpeg" alt=""></img></div>
+                        <div class="slide"><img src="img/alicia/1.jpeg" alt=""></img></div>
+                        <div class="slide"><img src="img/harry/harry.jpg"  alt=""></img></div>
+                        <div class="slide"><img src="img/juegos/juegosdelhambre.webp" alt=""></img></div>
+                        <div class="slide"><img src="img/leyenda/legend.jpg" alt=""></img></div>
+                        <div class="slide"><img src="img/it/it-2.jpg" alt=""></img></div>
+                        <div class="slide"><img src="img/arraival/La-llegada-1.jpg" alt=""></img></div>
+                    </div>
+                </div>
+        </div>
+
+<!--! ======================================================================= -->
+<!--! ====================== P  E  L  Í  C  U  L  A  S ====================== -->
+<!--! ======================================================================= -->
+
+        <div class="pelis2 container-fluid">
+            <div class="row peli1">
+                <div class="card bg-transparent" style="width: 17rem;">
+                    <img src="img/alicia/poster-alicia.jpg" class="card-img-top" alt="...">
+                    <span>Alicia en el País de las Maravillas</span>
+                  </div>
+                  <div class="card bg-transparent" style="width: 17rem;">
+                    <img src="img/harry/camara.jpg" class="card-img-top" alt="...">
+                    <span>Harry Potter La Cámara Secreta</span>
+                  </div>
+            </div>
+            <div class="row peli2">
+                <div class="card bg-transparent" style="width: 17rem;">
+                    <img src="img/it/it-eso.png" class="card-img-top" alt="...">
+                    <span>IT (ESO)</span>
+                  </div>
+                  <div class="card bg-transparent" style="width: 17rem;">
+                    <img src="img/leyenda/soy-leyenda.png" class="card-img-top" alt="...">
+                    <span>Soy Leyenda</span>
+                  </div>
+            </div>
+        </div>
+
+        <div class="footer container-fluid">
+            <div class="redes">
+                <h5 class="text-dark">Contáctanos</h5>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"> <i class="fa-brands fa-instagram"></i> </a>
+            </div>
+        
+            <div class="tecno">
+                <h5 class="text-dark ">Tecnologías</h5>
+                <a href="#"> <i class="fa-brands fa-bootstrap"></i></a>
+                <a href="#"><i class="fa-brands fa-css3"></i></a>
+                <a href="#"><i class="fa-brands fa-font-awesome"></i></a>
+                <a href="#"><i class="fa-brands fa-html5"></i></a>
+                <a href="#"><i class="fa-brands fa-js"></i></a>
+            </div>
+        </div>
+        </div>
+
+    
+    
+</body>
+<script src="./js/bootstrap.bundle.min.js"></script>
+</html>
