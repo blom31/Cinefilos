@@ -113,10 +113,15 @@
     display: flex;
     justify-content: space-between;
 }
+
+/*? ESTILOS DEL ASIDE  PELÍCULAS DESTACADAS */
 .aside{
     grid-area: aside;
+    background-color:rgba(0, 0, 0, 0.322);
     margin-top: 1em;
+    text-align: center;
 }
+
 .footer{
     grid-area: footer;
     margin-top: 2em;
@@ -167,6 +172,12 @@
     justify-content: space-evenly;
     /* background-color: rgb(187, 221, 143); */
 }
+.aside{
+    display: none;
+}
+.destacadas{
+    flex-direction: row;
+}
 .slider{
     width: 100vw;
     height: 20vh;
@@ -186,8 +197,11 @@
     }
 
     .foto {
-        max-height: 20rem;
-     }     
+        max-height: 178px;
+     }   
+     .foto img{
+        object-fit: cover;
+     }  
     .pelis{
         flex-direction: row;
         justify-content: center;
@@ -214,6 +228,7 @@
         display:none   ;
     }
     .footer{
+        margin-top: 0px;
         flex-direction: column;
         align-items: center;
     }
