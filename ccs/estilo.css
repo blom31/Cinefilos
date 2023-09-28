@@ -147,6 +147,10 @@
                          "aside aside aside"
                          "footer footer footer";
     }
+    .foto {
+        max-height: 20rem;
+     }
+
     .pelis{
         flex-direction: column;
     }
@@ -181,7 +185,9 @@
                          "footer footer footer";
     }
 
-         
+    .foto {
+        max-height: 20rem;
+     }     
     .pelis{
         flex-direction: row;
         justify-content: center;
@@ -212,7 +218,7 @@
         align-items: center;
     }
     .redes{
-        gap: 1em;
+        gap: .3em;
     }
     .tecno{
         display: none;
