@@ -4,227 +4,170 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="ccs/estilo.css">
-    <link rel="stylesheet" href="./ccs/bootstrap.min.css">
+    <link rel="stylesheet" href="ccs/estilos.css">
     <script src="https://kit.fontawesome.com/7f7fe5557e.js" crossorigin="anonymous"></script>
-   <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
     <link rel="shortcut icon" href="libro.ico">
     <title>Bibliocinéfilos</title>
-<!-- </head> a este archivo debo pegar -->
+</head>
 <body>
     <div class="contenedor">
-            <!--* ======================================================================= -->
-            <!--* =====================M E N U  -  R E S P O S I V E========================= -->
-            <!--* ======================================================================= -->
-
-        <header class="header container-fluid">
-            <nav class="navbar container navbar-expand-md navbar-light">
-                <div class="container-fluid ">
-                  <a class="navbar-brand fs-4 text-white" href="#">Bibliocinéfilo</a>
-                  <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="#">Inicio</a>
-                      </li>
-                      <li class="nav-item ">
-                        <a class="nav-link text-white" href="#">Películas</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                           Géneros
-                        </a>
-                        <ul class="dropdown-menu bg-dark " aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item text-white" href="#">Acción</a></li>
-                          <li><a class="dropdown-item text-white" href="#">Fantasía</a></li>
-                          <li><a class="dropdown-item text-white" href="#">Terror</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link text-white" href="#" tabindex="-1" aria-disabled="true">Libros</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link text-white" href="#" tabindex="-1" aria-disabled="true">Nosotros</a>
-                      </li>
-                    </ul>
-                    <form class="d-flex">
-                      <input class="form-control me-3" type="search" placeholder="Buscar" aria-label="Search">
-                      <button class="btn btn-outline-light" type="submit">Buscar</button>
-                    </form>
-                  </div>
-                </div>
-              </nav>
-        </header>
-
-            <!--? ======================================================================= -->
-            <!--? ======================= C  A  R  R  U  S  E  L  ======================= -->
-            <!--? ======================================================================= -->
-        <div class="carrusel container-fluid">
-          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active foto">
-                <img src="img/alicia/1.jpeg" class="d-block " alt="...">
-              </div>
-              <div class="carousel-item foto">
-                <img src="img/harry/harry.jpg" class="d-block " alt="..." >
-              </div>
-              <div class="carousel-item foto">
-                <img src="img/it/it.jpg" class="d-block " alt="...">
-              </div>
-              <div class="carousel-item foto">
-                <img src="img/juegos/juegosdelhambre.webp" class="d-block " alt="...">
-              </div>
-              <div class="carousel-item foto">
-                <img src="img/leyenda/legend.jpg" class="d-block " alt="...">
-              </div>
+        <!--* ======================================================================= -->
+        <!--* =====================M E N U  -  R E S P O S I V E========================= -->
+        <!--* ======================================================================= -->
+        <header  class="header">
+            <h2>Bibliocinéfilo</h2>
+            <nav class="nave">
+                <ul class="menu" id="menu">
+                    <li class="item">
+                        <a href="#" class="link">Inicio</a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="link">Películas</a>
+                    </li>
+                     <!-- <li class="item">
+                        <a href="#" class="link">Géneros</a>
+                    </li> -->
+                    <li class="item">
+                        <a href="#" class="link">Libros</a>
+                    </li>
+                    <!--<li class="item">
+                        <a href="#" class="link">Nosotros</a>
+                    </li> -->
+                </ul>
+            </nav> 
+            <div class="hamburger" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+        </header>
+        
+        
+        <!--? ======================================================================= -->
+        <!--? ======================= C  A  R  R  U  S  E  L  ======================= -->
+        <!--? ======================================================================= -->
+        
+        <div class="carrusel">
+            <div class="grande">
+                <img class="imagen" src="img/alicia/1.jpeg" alt="img" >
+                <img class="imagen" src="img/it/it.jpg" alt="img" >
+                <img class="imagen" src="img/alicia/1.jpeg" alt="img" > 
+            </div>
+            <ul class="puntos">
+                <li class="punto activo"><i class="fa-solid fa-circle" style="color: #ccd2db;"></i></li>
+                <li class="punto"><i class="fa-solid fa-circle" style="color: #ccd2db;"></i></li>
+                <li class="punto"><i class="fa-solid fa-circle" style="color: #ccd2db;"></i></li>
+            </ul>
         </div>
 
-
+        
         <!--! ======================================================================= -->
         <!--! ====================== P  E  L  Í  C  U  L  A  S ====================== -->
         <!--! ======================================================================= -->
-        <div class="pelis container-fluid">
-            <div class="row peli1">
-                <div class="card bg-transparent" onmouseover="showPopup(this)" onmouseout="hidePopup(this)" id="tarjeta" style="width: 17rem;">
-                    <img src="img/alicia/poster-alicia.jpg" class="card-img-top" alt="Alicia en el País de las Maravillas">
-                    <span>Alicia en el País de las Maravillas</span>
-                    <!-- <div class="popup" id="popup1">
-                      <iframe src="https://www.youtube.com/embed/mUHSNPfNkIs?si=QadtZUWKGRTnB7uK&amp;start=41"  frameborder="0" allowfullscreen></iframe>
-                      <p>Género: Terror</p>
-                      <p>Sinopsis: La película cuenta la historia de siete niños marginados...</p>
-                  </div> -->
-                  </div>
-                  <div class="card bg-transparent" onmouseover="showPopup(this)" onmouseout="hidePopup(this)" id="tarjeta" style="width: 17rem;">
-                    <img src="img/harry/camara.jpg" class="card-img-top" alt="Harry Pootter">
-                    <span>Harry Potter La Cámara Secreta</span>
-                    <!-- <div class="popup" id="popup1">
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/MziLH3uow6E?si=HcvvK5TqoH0nMllp"frameborder="0" allowfullscreen></iframe>
-                      <p>Género: Terror</p>
-                      <p>Sinopsis: La película cuenta la historia de siete niños marginados...</p>
-                    </div> -->
-                  </div>
-            </div>
-            <div class="row peli2">
-                <div class="card bg-transparent"onmouseover="showPopup(this)" onmouseout="hidePopup(this)" id="tarjeta" style="width: 17rem;">
-                    <img src="img/it/it-eso.png" class="card-img-top" alt="It (ESO)">
-                    <span>IT (ESO)</span>
-                    <!-- <div class="popup" id="popup1">
-                      <iframe src="https://www.youtube.com/embed/_oBZ_zTz0Nw?si=ldHQhbz-4Zrpmqje&amp;start=73" frameborder="0" allowfullscreen></iframe>
-                      <p>Género: Terror</p>
-                      <p>Sinopsis: La película cuenta la historia de siete niños marginados...</p>
-                  </div> -->
-                  </div>
-                  <div class="card bg-transparent" onmouseover="showPopup(this)" onmouseout="hidePopup(this)" id="tarjeta" style="width: 17rem;">
-                    <img src="img/leyenda/soy-leyenda.png" class="card-img-top" alt="Soy Leyenda">
-                    <span>Soy Leyenda</span>
-                    <!-- <div class="popup" id="popup1">
-                      <iframe src="https://www.youtube.com/embed/TXQ7kRnFXS4?si=jjaEpzy-XQ8MSwlM&amp;start=65" frameborder="0" allowfullscreen></iframe>
-                      <p>Género: Terror</p>
-                      <p>Sinopsis: La película cuenta la historia de siete niños marginados...</p>
-                  </div> -->
-                  </div>
-            </div>
-            
+
+        <div class="pelis">
+           <div class="tarjeta">
+            <img src="img/alicia/poster-alicia.jpg" alt="Alicia en el Pais de las Maravillas">
+            <span>Alicia en el Pais de las Maravillas</span>
+           </div>
+           <div class="tarjeta">
+            <img src="img/harry/camara.jpg" alt="Harry Potter La Cámara Secreta">
+            <span>Harry Potter La Cámara Secreta</span>
+           </div>
+           <div class="tarjeta">
+            <img src="img/it/it-eso.png" alt="IT (ESO)">
+            <span>IT (ESO)</span>
+           </div>
+           <div class="tarjeta">
+            <img src="img/leyenda/soy-leyenda.png" alt="Soy Leyenda">
+            <span>Soy Leyenda</span>
+           </div>
         </div>
 
         <!--? ======================================================================= -->
         <!--? ===========================  A  S  I  D  E  =========================== -->
         <!--? ======================================================================= -->
 
-        <div class="aside ">
-          <h5>Películas Destacadas</h5>
-          <div class="destacadas">
-            <div class="">
-              <img src="img/lord/losanillos.jpeg" style="width: 14.5rem;" alt="">
+        <div class="aside">
+            <div >
+                <h4>Películas Destacadas</h4>
             </div>
-            <span>El Retorno</span>
-            <div class="">
-              <img src="img/alicia/alicia - 1.webp" style="width: 14.5rem;" alt="">
+            <div class="destacadas">
+                <div class="destacada">
+                    <img src="img/lord/losanillos.jpeg" alt="El Retorno">
+                    <span>El Retorno</span>
+                </div>
+                <div class="destacada">
+                    <img src="img/alicia/alicia - 1.webp" alt="Alicia detrás del Espejo">
+                    <span>Alicia detrás del Espejo</span>
+                </div>
+                <div class="destacada">
+                    <img src="img/it/it-globo.jpg" alt="IT Capítulo 2">
+                    <span>IT Capítulo 2</span>
+                </div>
+                <div class="destacada">
+                    <img src="img/matilda/matilda.jpg" alt="Matilda">
+                    <span>Matilda</span>
+                </div>
             </div>
-            <span>Aicia detrás del Espejo</span>
-            <div class="">
-              <img src="img/matilda/matilda.jpg" style="width: 14.5rem;" alt="">
-            </div>
-            <span>Matilda</span>
-            <div class="">
-              <img src="img/it/it-globo.jpg" style="width: 14.5rem;" alt="">
-            </div>
-            <span>IT Capítulo 2</span>
-          </div>
         </div>
+        
 
         <!--* ======================================================================= -->
         <!--* =====================M  A  R  Q  U  E  S  I  N  A ===================== -->
         <!--* ======================================================================= -->
         <div class="marquesina">
-                <div class="slider">
-                    <div class="slide-track">
-                        <div class="slide"><img src="img/alicia/1.jpeg" alt=""></img></div>
-                        <div class="slide"><img src="img/harry/harry.jpg"  alt=""></img></div>
-                        <div class="slide"><img src="img/juegos/juegosdelhambre.webp" alt=""></img></div>
-                        <div class="slide"><img src="img/leyenda/legend.jpg" alt=""></img></div>
-                        <div class="slide"><img src="img/it/it.jpg" alt=""></img></div>
-                        <div class="slide"><img src="img/lord/losanillos.jpeg" alt=""></img></div>
-                        <div class="slide"><img src="img/alicia/1.jpeg" alt=""></img></div>
-                        <div class="slide"><img src="img/harry/harry.jpg"  alt=""></img></div>
-                        <div class="slide"><img src="img/juegos/juegosdelhambre.webp" alt=""></img></div>
-                        <div class="slide"><img src="img/leyenda/legend.jpg" alt=""></img></div>
-                        <div class="slide"><img src="img/it/it.jpg" alt=""></img></div>
-                        <div class="slide"><img src="img/lord/losanillos.jpeg" alt=""></img></div>
-                    </div>
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="slide"><img src="img/alicia/1.jpeg" alt=""></img></div>
+                    <div class="slide"><img src="img/harry/harry.jpg"  alt=""></img></div>
+                    <div class="slide"><img src="img/juegos/juegosdelhambre.webp" alt=""></img></div>
+                    <div class="slide"><img src="img/leyenda/legend.jpg" alt=""></img></div>
+                    <div class="slide"><img src="img/it/it.jpg" alt=""></img></div>
+                    <div class="slide"><img src="img/lord/losanillos.jpeg" alt=""></img></div>
+                    <div class="slide"><img src="img/alicia/1.jpeg" alt=""></img></div>
+                    <div class="slide"><img src="img/harry/harry.jpg"  alt=""></img></div>
+                    <div class="slide"><img src="img/juegos/juegosdelhambre.webp" alt=""></img></div>
+                    <div class="slide"><img src="img/leyenda/legend.jpg" alt=""></img></div>
+                    <div class="slide"><img src="img/it/it.jpg" alt=""></img></div>
+                    <div class="slide"><img src="img/lord/losanillos.jpeg" alt=""></img></div>
                 </div>
-        </div>
+            </div>
+    </div>
 
         <!--! ======================================================================= -->
         <!--! ==================== P  E  L  Í  C  U  L  A  S 2 ====================== -->
         <!--! ======================================================================= -->
 
-        <div class="pelis2 container-fluid">
-            <div class="row peli1">
-                <div class="card bg-transparent" id="tarjeta" style="width: 17rem;">
-                    <img src="img/arraival/arraival.jpg" class="card-img-top" alt="...">
-                    <span>La Llegada</span>
-                  </div>
-                  <div class="card bg-transparent" id="tarjeta" style="width: 17rem;">
-                    <img src="img/lord/el señor de los anillos - la comunidad.jpg" class="card-img-top" alt="...">
-                    <span>Harry Potter La Cámara Secreta</span>
-                  </div>
+        <div class="pelis2">
+            <div class="tarjeta">
+             <img src="img/arraival/arraival.jpg" alt="La Llegada">
+             <span>La Llegada</span>
             </div>
-            <div class="row peli2">
-                <div class="card bg-transparent" id="tarjeta" style="width: 17rem;">
-                    <img src="img/matilda/matilda1.png" class="card-img-top" alt="...">
-                    <span>IT (ESO)</span>
-                  </div>
-                  <div class="card bg-transparent" id="tarjeta" style="width: 17rem;">
-                    <img src="img/juegos/juegos-del-hambre.png" class="card-img-top" alt="...">
-                    <span>Soy Leyenda</span>
-                  </div>
+            <div class="tarjeta">
+             <img src="img/lord/el señor de los anillos - la comunidad.jpg" alt="La Comunidad del Anillo">
+             <span>La Comunidad del Anillo</span>
             </div>
-        </div>
-
-        <div class="footer container-fluid">
+            <div class="tarjeta">
+             <img src="img/matilda/matilda1.png" alt="Matilda">
+             <span>Matilda</span>
+            </div>
+            <div class="tarjeta">
+             <img src="img/juegos/juegos-del-hambre.png" alt="Juegos del Hambre">
+             <span>Juegos del Hambre</span>
+            </div>
+         </div>
+        <!--? ======================================================================= -->
+        <!--? ========================  F  O  O  T  E  R  =========================== -->
+        <!--? ======================================================================= -->
+        <div class="footer">
             <div class="redes ">
-                <h5 class="text-white">Contáctanos</h5>
+                <h4 class="text-white">Contáctanos</h4>
                 <a href="#"><i class="fa-brands fa-twitter"></i></a>
                 <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="#"> <i class="fa-brands fa-instagram"></i> </a>
             </div>
         
             <div class="tecno">
-                <h5 class="text-white ">Tecnologías</h5>
+                <h4 class="text-white ">Tecnologías</h4>
                 <a href="#"> <i class="fa-brands fa-bootstrap"></i></a>
                 <a href="#"><i class="fa-brands fa-css3"></i></a>
                 <a href="#"><i class="fa-brands fa-font-awesome"></i></a>
@@ -233,21 +176,7 @@
             </div>
         </div>
         </div>
-
-    
-    
+    </div>
+    <script src="js/javaScript.js"></script>
 </body>
-<script src="./js/bootstrap.bundle.min.js"></script>
-
-<script src="./js/javaScript.js"></script>
-
-<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-crossorigin="anonymous"></script> -->
 </html>
