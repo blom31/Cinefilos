@@ -56,11 +56,11 @@
 .carrusel{
     grid-area: carrusel;
     width: 100%;
-    height: 100vh;
+    height: 95vh;
     overflow: hidden;
 }
 .grande{
-    width: 301%;
+    width: 300%;
     height: 95%;
     display: flex;
     flex-flow: row nowrap;
@@ -75,7 +75,8 @@
     width: calc(100% / 3 );
     align-items: center;
     height: 100%;
-    align-items: center;
+    flex-flow: row nowrap;
+    object-fit: cover;
 }
 .puntos{
     width: 100%;
@@ -309,8 +310,13 @@
         transform: translateY(0);
     }
     .carrusel{
-        width: 100vw;
+        width: 95%;
+        height: 60vh;
     }
+    .grande{
+        height: 95%;
+    }
+    
     .pelis{
         width: 100vw;
         flex-direction: row;
